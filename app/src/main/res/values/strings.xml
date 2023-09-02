@@ -10,4 +10,17 @@
     <string name="request_camera_permission_message">Please enable camera permissions in Settings.</string>
     <string name="go_to_setting">Go to setting</string>
     <string name="cancel">Cancel</string>
+    <string name="please_enter_title">Please enter title</string>
+    <string name="please_enter_description">Please enter description</string>
+    <string name="please_select_location">Please select location</string>
+    <string name="please_add_image">Please add image</string>
+    <string name="happy_place_inserted_successfully">The happy place details are inserted successfully.</string>
+    <string name="no_available_records">There are no available records. Please add a record.</string>
+    <string name="image_content_description">image</string>
+    <string name="update">UPDATE</string>
+    <string name="google_map_api_key">AIzaSyBQmB9F-jChM12uwjI9guLtHVoBtgbU4ho</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="btn_text_view_on_map">VIEW ON MAP</string>
+    <string name="add_place_select_current_location_text">SELECT CURRENT LOCATION</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
