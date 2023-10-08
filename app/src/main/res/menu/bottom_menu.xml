@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/happy_place"
+        android:icon="@drawable/ic_location"
+        android:title="Happy Place" />
+
+    <item
+        android:id="@+id/weather"
+        android:icon="@drawable/ic_weather"
+        android:title="Weather" />
+
+</menu>
