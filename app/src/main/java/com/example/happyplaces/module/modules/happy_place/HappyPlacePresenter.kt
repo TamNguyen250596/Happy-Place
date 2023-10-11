@@ -5,8 +5,8 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.happyplaces.module.adapters.HappyPlaceAdapter
-import com.example.happyplaces.module.database.DatabaseHandler
-import com.example.happyplaces.module.models.HappyPlaceModel
+import com.example.happyplaces.module.common.database.DatabaseHandler
+import com.example.happyplaces.module.common.models.HappyPlaceModel
 import com.happyplaces.utils.SwipeToDeleteCallback
 import pl.kitek.rvswipetodelete.SwipeToEditCallback
 

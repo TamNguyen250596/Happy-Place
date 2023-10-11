@@ -1,17 +1,11 @@
 package com.example.happyplaces.module.adapters
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.net.toUri
-import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.happyplaces.databinding.ItemHappyPlcaeBinding
-import com.example.happyplaces.module.database.DatabaseHandler
-import com.example.happyplaces.module.models.HappyPlaceModel
-import com.example.happyplaces.module.modules.AddHappyPlaceActivity
-import com.example.happyplaces.module.modules.happy_place.HappyPlaceFragment
-import pl.kitek.rvswipetodelete.SwipeToEditCallback
+import com.example.happyplaces.module.common.models.HappyPlaceModel
 
 class HappyPlaceAdapter(private var items: ArrayList<HappyPlaceModel>): RecyclerView.Adapter<HappyPlaceAdapter.ViewHolder>() {
 

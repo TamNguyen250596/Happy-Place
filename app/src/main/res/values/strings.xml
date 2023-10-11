@@ -23,4 +23,7 @@
     <string name="btn_text_view_on_map">VIEW ON MAP</string>
     <string name="add_place_select_current_location_text">SELECT CURRENT LOCATION</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_contentDescription">image</string>
+    <string name="miles_per_hour">miles/hour</string>
+    <string name="action_refresh">Refresh</string>\
 </resources>

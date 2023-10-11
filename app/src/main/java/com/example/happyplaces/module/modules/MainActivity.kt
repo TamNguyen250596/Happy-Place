@@ -6,11 +6,13 @@ import androidx.fragment.app.Fragment
 import com.example.happyplaces.R
 import com.example.happyplaces.databinding.ActivityMainBinding
 import com.example.happyplaces.module.modules.happy_place.HappyPlaceFragment
+import com.example.happyplaces.module.modules.weather.WeatherFragment
 
 class MainActivity : AppCompatActivity() {
 
     // MARK: - Properties
     private lateinit var binding: ActivityMainBinding
+    private var currentFragmentTag = ""
 
     // MARK: - Life cycle
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,13 +26,15 @@ class MainActivity : AppCompatActivity() {
 
     // MARK: Functions
     private fun setupView() {
-        loadFragment(HappyPlaceFragment())
+        loadFragment(HappyPlaceFragment(), R.id.happy_place.toString())
     }
 
-    private fun loadFragment(fragment: Fragment){
+    private fun loadFragment(fragment: Fragment, tag: String){
+        if (tag == currentFragmentTag) return
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container,fragment)
+        transaction.replace(binding.container.id, fragment, tag)
         transaction.commit()
+        currentFragmentTag = tag
     }
 
     // MARK: - Actions
@@ -38,11 +42,11 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.happy_place -> {
-                    loadFragment(HappyPlaceFragment())
+                    loadFragment(HappyPlaceFragment(), R.id.happy_place.toString())
                     true
                 }
                 R.id.weather -> {
-                    loadFragment(WeatherFragment())
+                    loadFragment(WeatherFragment(), R.id.weather.toString())
                     true
                 }
                 else -> {

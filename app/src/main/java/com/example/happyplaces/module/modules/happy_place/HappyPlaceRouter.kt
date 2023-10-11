@@ -1,7 +1,7 @@
 package com.example.happyplaces.module.modules.happy_place
 
 import android.content.Intent
-import com.example.happyplaces.module.models.HappyPlaceModel
+import com.example.happyplaces.module.common.models.HappyPlaceModel
 import com.example.happyplaces.module.modules.AddHappyPlaceActivity
 import com.example.happyplaces.module.modules.HappyPlaceDetailActivity
 
