@@ -29,8 +29,8 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.core.net.toUri
 import com.example.happyplaces.BuildConfig
 import com.example.happyplaces.R
-import com.example.happyplaces.module.database.DatabaseHandler
-import com.example.happyplaces.module.models.HappyPlaceModel
+import com.example.happyplaces.module.common.database.DatabaseHandler
+import com.example.happyplaces.module.common.models.HappyPlaceModel
 import com.example.happyplaces.module.modules.happy_place.HappyPlaceFragment
 import com.google.android.libraries.places.api.Places
 import com.google.android.libraries.places.api.net.PlacesClient

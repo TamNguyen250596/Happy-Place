@@ -1,9 +1,8 @@
 package com.example.happyplaces.module.modules.happy_place
 
 import android.content.Context
-import android.view.*
 import androidx.recyclerview.widget.RecyclerView
-import com.example.happyplaces.module.models.HappyPlaceModel
+import com.example.happyplaces.module.common.models.HappyPlaceModel
 
 interface HappyPlaceInterface {
 

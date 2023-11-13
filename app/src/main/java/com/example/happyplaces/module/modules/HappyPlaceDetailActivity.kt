@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.net.toUri
 import com.example.happyplaces.databinding.ActivityHappPlaceDetailBinding
-import com.example.happyplaces.module.models.HappyPlaceModel
+import com.example.happyplaces.module.common.models.HappyPlaceModel
 import com.example.happyplaces.module.modules.happy_place.HappyPlaceFragment
 
 class HappyPlaceDetailActivity : AppCompatActivity() {

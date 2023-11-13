@@ -1,4 +1,4 @@
-package com.example.happyplaces.module.database
+package com.example.happyplaces.module.common.database
 
 import android.annotation.SuppressLint
 import android.content.ContentValues
@@ -6,7 +6,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.example.happyplaces.module.models.HappyPlaceModel
+import com.example.happyplaces.module.common.models.HappyPlaceModel
 
 class DatabaseHandler(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {

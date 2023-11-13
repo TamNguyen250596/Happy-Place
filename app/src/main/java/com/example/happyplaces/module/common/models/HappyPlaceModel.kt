@@ -1,4 +1,4 @@
-package com.example.happyplaces.module.models
+package com.example.happyplaces.module.common.models
 
 import android.os.Parcel
 import android.os.Parcelable
