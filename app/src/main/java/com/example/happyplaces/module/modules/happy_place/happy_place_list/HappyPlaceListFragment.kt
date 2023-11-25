@@ -1,4 +1,4 @@
-package com.example.happyplaces.module.modules.happy_place
+package com.example.happyplaces.module.modules.happy_place.happy_place_list
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,16 +8,14 @@ import android.view.ViewGroup
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import com.example.happyplaces.databinding.FragmentHappyPlaceBinding
-import com.example.happyplaces.module.modules.AddHappyPlaceActivity
+import com.example.happyplaces.databinding.FragmentHappyListPlaceBinding
+import com.example.happyplaces.module.modules.happy_place.add_happy_place.AddHappyPlaceActivity
 
-class HappyPlaceFragment : Fragment(), HappyPlaceInterface.View {
+class HappyPlaceListFragment : Fragment(), HappyPlaceListInterface.View {
 
     // MARK: - Properties
-    private lateinit var presenter: HappyPlaceInterface.Presenter
-    private lateinit var interaction: HappyPlaceInteraction
-    private lateinit var router: HappyPlaceRouter
-    private lateinit var binding: FragmentHappyPlaceBinding
+    private lateinit var presenter: HappyPlaceListInterface.Presenter
+    private lateinit var binding: FragmentHappyListPlaceBinding
     lateinit var startForResult: ActivityResultLauncher<Intent>
 
     // MARK: - Companion
@@ -31,10 +29,15 @@ class HappyPlaceFragment : Fragment(), HappyPlaceInterface.View {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        router = HappyPlaceRouter(this)
-        interaction = HappyPlaceInteraction()
-        presenter = HappyPlacePresenter(this, interaction, router)
-        binding = FragmentHappyPlaceBinding.inflate(inflater, container, false)
+        val router = HappyPlaceListRouter()
+        val interaction = HappyPlaceListInteraction()
+        val presenter = HappyPlaceListPresenter()
+        router.fragment = this
+        presenter.view = this
+        presenter.router = router
+        presenter.interaction = interaction
+        this.presenter = presenter
+        binding = FragmentHappyListPlaceBinding.inflate(inflater, container, false)
         return binding.root
     }
 

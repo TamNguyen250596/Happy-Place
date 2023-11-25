@@ -1,10 +1,10 @@
-package com.example.happyplaces.module.modules.happy_place
+package com.example.happyplaces.module.modules.happy_place.happy_place_list
 
 import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
 import com.example.happyplaces.module.common.models.HappyPlaceModel
 
-interface HappyPlaceInterface {
+interface HappyPlaceListInterface {
 
     interface View {
         fun showHideRecycleView(isGone: Int)

@@ -7,7 +7,7 @@ import android.os.Bundle
 import androidx.core.net.toUri
 import com.example.happyplaces.databinding.ActivityHappPlaceDetailBinding
 import com.example.happyplaces.module.common.models.HappyPlaceModel
-import com.example.happyplaces.module.modules.happy_place.HappyPlaceFragment
+import com.example.happyplaces.module.modules.happy_place.happy_place_list.HappyPlaceListFragment
 
 class HappyPlaceDetailActivity : AppCompatActivity() {
 
@@ -28,9 +28,9 @@ class HappyPlaceDetailActivity : AppCompatActivity() {
 
     // MARK: - Get Data
     private fun getData() {
-        if(intent.hasExtra(HappyPlaceFragment.putHappyPlace)) {
+        if(intent.hasExtra(HappyPlaceListFragment.putHappyPlace)) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                happyPlace = intent.getParcelableExtra(HappyPlaceFragment.putHappyPlace, HappyPlaceModel::class.java) as HappyPlaceModel
+                happyPlace = intent.getParcelableExtra(HappyPlaceListFragment.putHappyPlace, HappyPlaceModel::class.java) as HappyPlaceModel
             }
         }
     }

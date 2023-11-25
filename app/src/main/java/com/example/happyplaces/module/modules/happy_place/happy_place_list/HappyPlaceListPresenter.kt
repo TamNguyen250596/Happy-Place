@@ -1,4 +1,4 @@
-package com.example.happyplaces.module.modules.happy_place
+package com.example.happyplaces.module.modules.happy_place.happy_place_list
 
 import android.view.View
 import androidx.recyclerview.widget.ItemTouchHelper
@@ -10,13 +10,12 @@ import com.example.happyplaces.module.common.models.HappyPlaceModel
 import com.happyplaces.utils.SwipeToDeleteCallback
 import pl.kitek.rvswipetodelete.SwipeToEditCallback
 
-class HappyPlacePresenter(
-    private val view: HappyPlaceInterface.View,
-    private val interaction: HappyPlaceInterface.Interaction,
-    private val router: HappyPlaceInterface.Router
-): HappyPlaceInterface.Presenter {
+class HappyPlaceListPresenter: HappyPlaceListInterface.Presenter {
 
     // MARK: - Properties
+    lateinit var view: HappyPlaceListInterface.View
+    lateinit var interaction: HappyPlaceListInterface.Interaction
+    lateinit var router: HappyPlaceListInterface.Router
     private var happyPlaces = ArrayList<HappyPlaceModel>()
 
     // MARK: - Functions

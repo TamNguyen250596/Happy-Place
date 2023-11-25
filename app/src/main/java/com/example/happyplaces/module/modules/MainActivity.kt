@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.happyplaces.R
 import com.example.happyplaces.databinding.ActivityMainBinding
-import com.example.happyplaces.module.modules.happy_place.HappyPlaceFragment
+import com.example.happyplaces.module.modules.happy_place.happy_place_list.HappyPlaceListFragment
 import com.example.happyplaces.module.modules.weather.WeatherFragment
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     // MARK: Functions
     private fun setupView() {
-        loadFragment(HappyPlaceFragment(), R.id.happy_place.toString())
+        loadFragment(HappyPlaceListFragment(), R.id.happy_place.toString())
     }
 
     private fun loadFragment(fragment: Fragment, tag: String){
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.happy_place -> {
-                    loadFragment(HappyPlaceFragment(), R.id.happy_place.toString())
+                    loadFragment(HappyPlaceListFragment(), R.id.happy_place.toString())
                     true
                 }
                 R.id.weather -> {

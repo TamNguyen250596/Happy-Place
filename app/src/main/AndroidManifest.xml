@@ -41,7 +41,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/CustomNoActionBarTheme" />
         <activity
-            android:name=".module.modules.AddHappyPlaceActivity"
+            android:name=".module.modules.happy_place.add_happy_place.AddHappyPlaceActivity"
             android:exported="false"
             android:label="ADD HAPPY PLACE"
             android:screenOrientation="portrait"
