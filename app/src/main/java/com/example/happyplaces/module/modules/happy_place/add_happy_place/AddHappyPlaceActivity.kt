@@ -1,5 +1,6 @@
 package com.example.happyplaces.module.modules.happy_place.add_happy_place
 
+import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.icu.text.SimpleDateFormat
 import androidx.appcompat.app.AppCompatActivity
@@ -9,16 +10,13 @@ import com.example.happyplaces.databinding.ActivityAddHappyPlaceBinding
 import java.util.*
 import android.content.Intent
 import android.graphics.Bitmap
-import android.net.Uri
 import android.os.Build
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
 import androidx.core.net.toUri
-import com.example.happyplaces.BuildConfig
 import com.example.happyplaces.R
 import com.example.happyplaces.module.common.models.HappyPlaceModel
-import com.google.android.libraries.places.api.Places
-import com.google.android.libraries.places.api.net.PlacesClient
 
 class AddHappyPlaceActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, AddHappyPlaceInterface.View {
 
@@ -27,6 +25,7 @@ class AddHappyPlaceActivity : AppCompatActivity(), DatePickerDialog.OnDateSetLis
     private lateinit var presenter: AddHappyPlacePresenter
     lateinit var startForResult: ActivityResultLauncher<Intent>
     private val calendar = Calendar.getInstance()
+    @SuppressLint("NewApi")
     private val dateFormatter = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
 
     // MARK: - Companion

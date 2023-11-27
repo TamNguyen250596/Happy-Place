@@ -35,7 +35,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/CustomNoActionBarTheme"/>
         <activity
-            android:name=".module.modules.HappyPlaceDetailActivity"
+            android:name=".module.modules.happy_place.happy_place_detail.HappyPlaceDetailActivity"
             android:exported="false"
             android:label="HAPPY PLACE DETAIL"
             android:screenOrientation="portrait"

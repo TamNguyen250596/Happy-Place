@@ -3,7 +3,7 @@ package com.example.happyplaces.module.modules.happy_place.happy_place_list
 import android.content.Intent
 import com.example.happyplaces.module.common.models.HappyPlaceModel
 import com.example.happyplaces.module.modules.happy_place.add_happy_place.AddHappyPlaceActivity
-import com.example.happyplaces.module.modules.HappyPlaceDetailActivity
+import com.example.happyplaces.module.modules.happy_place.happy_place_detail.HappyPlaceDetailActivity
 
 class HappyPlaceListRouter: HappyPlaceListInterface.Router {
 

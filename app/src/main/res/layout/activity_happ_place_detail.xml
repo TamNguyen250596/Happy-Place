@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".module.modules.HappyPlaceDetailActivity">
+    tools:context=".module.modules.happy_place.happy_place_detail.HappyPlaceDetailActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_add_place"
