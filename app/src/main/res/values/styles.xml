@@ -11,4 +11,8 @@
         <item name="android:textColorPrimary">#FFFFFF</item>
         <item name="android:colorControlNormal">#FFFFFF</item>
     </style>
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
